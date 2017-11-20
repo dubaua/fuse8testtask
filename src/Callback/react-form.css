@@ -1,0 +1,173 @@
+/* ----------------- Input styles ----------------- */
+
+.react-form-input {
+  border: none;
+  background: transparent;
+  font-family: inherit;
+  color: white;
+  width: 100%;
+  font-size: 16px;
+  font-style: italic;
+  border-bottom: 1px solid #ced3d8;
+  padding: 9px 0;
+}
+
+.react-form-input:focus {
+  border-color: #03c1de;
+  font-style: normal;
+  outline: none;
+}
+
+.react-form-input-error {
+  border-color: #ff4f00;
+  font-style: normal;
+  background: url("./error.png") right center no-repeat;
+}
+
+.react-form-input-warning {
+  border-color: orange;
+  font-style: normal;
+}
+
+.react-form-input-success {
+  border-color: #8ac53f;
+  font-style: normal;
+  background: url("./success.png") right center no-repeat;
+}
+
+.react-form-input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+.react-form-input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+.react-form-input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+.react-form-input:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* ----------------- Message styles ----------------- */
+
+.react-form-field-wrapper {
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.react-form-field-wrapper:hover .react-form-message {
+  display: block;
+}
+
+.react-form-message {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5);
+  background: white;
+  border-bottom-width: 9px;
+  border-bottom-style: solid;
+  font-size: 14px;
+  padding: 16px;
+  display: none;
+  z-index: 1;
+}
+
+.react-form-message:after {
+  position: absolute;
+  content: "";
+  border-top: 9px solid;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  bottom: -18px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.react-form-message-error {
+  color: #ff4f00;
+}
+
+.react-form-message-warning {
+  color: orange;
+}
+
+.react-form-message-success {
+  color: #8ac53f;
+  /* display: block; */
+}
+
+.react-form-select {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+}
+
+.react-form-select select {
+  display: block;
+  width: 100%;
+  padding: 9px 0;
+  cursor: pointer;
+  color: inherit;
+  font-family: inherit;
+  font-size: 16px;
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+  background: transparent;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.react-form-select select::-ms-expand {
+  display: none;
+}
+
+.react-form-select select:hover,
+.react-form-select select:focus {
+}
+
+.react-form-select select:disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.react-form-select-arrow {
+  position: absolute;
+  top: 16px;
+  right: 15px;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  border-width: 8px 5px 0 5px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.8) transparent transparent transparent;
+}
+.react-form-select select:hover ~ .react-form-select-arrow,
+.react-form-select select:focus ~ .react-form-select-arrow {
+  border-top-color: rgba(255, 255, 255, 0.8);
+}
+
+.react-form-select select:disabled ~ .react-form-select-arrow {
+  border-top-color: rgba(255, 255, 255, 0.8);
+}
+
+.react-form-select-error {
+  background: none;
+}
+
+.react-form-select-error select {
+  border-color: red;
+}
+
+.react-form-select-warning select {
+  border-color: orange;
+}
+.react-form-select-success {
+  background: none;
+}
+.react-form-select-success select {
+  /* // Style form select success here */
+}
